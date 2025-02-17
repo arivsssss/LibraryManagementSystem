@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AM LIBRARY </title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFD500; /* Background color */
+            position: relative;
+            height: 100vh;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            opacity: 0.7; /* Reduced opacity of image */
+            width: 100%; /* Full screen width */
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Set behind content */
+        }
+        nav {
+            background-color: #FFD500;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            margin: 10px; /* Added margin to space out links */
+            text-decoration: none;
+            font-size: 18px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #000000; /* Change hover color */
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+            background-color: white; /* Changed background color to white */
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        img {
+            max-width: 100%; /* Make images responsive */
+            height: auto;    /* Maintain aspect ratio */
+        }
+        .main-img {
+            opacity: 1;
+        }
+        .header-content {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+        }
+        .header-content img {
+            margin-right: 15px; /* Space between logo and text */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="AM Library Logo" style="width: 100px; height: auto;"> <!-- Adjust size as needed -->
+            <h1 style="margin: 0;">AM LIBRARY</h1> <!-- Remove margin for better alignment -->
+        </div>
+        <img src="images/books-2602030_1280.jpg" alt="Library">
+    </header>
+
+    <nav>
+        <a href="viewBooks.jsp">View Books</a>
+        <a href="addBook.jsp">Add Book</a>
+        <a href="removeBook.jsp">Remove Book</a>
+        <a href="viewStaff.jsp">View Staff</a>
+        <a href="addStaff.jsp">Add Staff</a>
+        <a href="removeStaff.jsp">Remove Staff</a>
+        <a href="viewIssuedBooks.jsp">View Issued Books</a>
+        <a href="addIssuedBook.jsp">Issue Book</a>
+    </nav>
+
+    <main>
+        <h2>Welcome to AM Library Management System</h2>
+        <p>Please use the navigation above to manage the library database.</p>
+        <img src="images/welcome.jpg" alt="Welcome" class="main-img" style="width: 30%; height: auto;"> 
+    </main>
+
+    <footer>
+        <p>Library Management System @Coimbatore</p>
+    </footer>
+
+</body>
+</html>
